@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+body{
+  background-color:#252232;
+  color: white;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-left:2px solid white;
+  border-right: 2px solid white;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  margin-top: 80px;
+}
+nav{
+ position:fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+height: 60px;
+  width:100%;
+justify-content:flex-start;
+padding-top: 4px;
+backdrop-filter:blur(30px);
+
+border-bottom: 1.5px solid #D3B21A;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+box-shadow: 0px 1px 10px #D3B21A;
+z-index: 1000;
+}
+.nav-page p{
+  display: inline-block;
+  
+}
+.nav-page a{
+  text-decoration: none;
+  color:white;
+  font-size: 0.85rem;
+
+  
+}
+.nav-page{
+  display: flex;
+  justify-content:space-evenly;
+  width: 100%;
+}
+
+.nav-search {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-top: 5px;
+}
+.nav-search p {
+  display: inline-block;
+  
+}
+#search{
+  border: none;
+  padding: 5px  10px 5px 10px;
+
+  width:80%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#search:focus{
+  outline: none;
+
+}
+#submit{
+  border:none;
+  padding: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width:20%;
+  background-color: #1B5EA0;
+  color: white;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+#submit:hover{
+  background-color:#1A8DFF ;
+}
+/* আইডি ব্যবহারের ক্ষেত্রে # চিহ্ন দিতে হয় */
+#resume{
+  position: relative;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #F8DB06;
+  display: inline-block;
+   /* লেখা থেকে লাইনের দূরত্ব */
+}
+
+/* আন্ডারলাইন তৈরির জন্য ::after */
+#resume::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* লাইনের পুরুত্ব */
+  background-color: #FFDF00; /* আপনার পছন্দের রঙ */
+  
+  /* শুরুতে লাইনটি জিরো থাকবে */
+  transform: scaleX(0);
+  transform-origin: left; /* বাম থেকে ডানে যাওয়ার জন্য এটি জরুরি */
+  
+  /* ক্লিক বা পেজ লোড হলে এই অ্যানিমেশনটি চলবে */
+  animation: slideAndStay 0.5s ease-out forwards;
+}
+
+/* অ্যানিমেশন লজিক: বাম থেকে ডানে গিয়ে স্টে করবে */
+@keyframes slideAndStay {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1); /* ১০০% হয়ে আটকে থাকবে */
+  }
+}
