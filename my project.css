@@ -92,11 +92,11 @@ z-index: 1000;
 
 
 .photo{
-  width: 220px;
-  height: 170px;
+  width: 160px;
+  height: 150px;
   background-color: #2EE3E4;
 border-radius:21% 79% 21% 79% / 79% 21% 79% 21%   ;
-  overflow: scroll;
+  overflow: hidden;
   
 
 }
@@ -113,13 +113,141 @@ border-radius:21% 79% 21% 79% / 79% 21% 79% 21%   ;
   display:block;
 
 }
-.my-info h3{
+.item-card{
+  width: 90%;
+  background-color: #453745;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding:5px 10px;
+  margin-bottom: 5px;
+  font-size: 0.85em;
+}
+h3{
   margin-top:10px;
   color: #FF8900;
   text-align: center;
 }
-.my-info p{
-  text-align: center;
+
+.my-info pre{
+  text-align:left;
   margin-top:10px;
-  font-size:0.9rem;
+  font-size:0.85rem;
+  font-weight: 200;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0px 5px 3px 5px;
+  color: #E0E0E0;
+}
+/* টাইটেল কন্টেইনার বা ডিভ-এর জন্য */
+.icon {
+   
+    align-items: center;
+    background: linear-gradient(135deg, #6d5b7b, #463645);
+    color: #ffffff;
+    border-radius: 50px; 
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 140px;
+    height: 40px;
+  display :flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+    z-index: 10;
+    margin-top: -23px;
+    margin-left: 4px;
+}
+
+  
+
+.address pre{ text-align:left;
+  margin-top:10px;
+  font-size:0.85rem;
+  font-weight: 200;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0px 5px 3px 5px;
+  color: #E0E0E0;
+}
+.table-desine1{
+ background-color: #1E1B26;
+  border:1px solid #5D5470;
+  height: 30px;
+  width:40vw;
+  text-align: center;
+  color: #E0E0E0;
+}
+.table-desine2{
+ background-color: #2D2640;
+  border:1px solid #5D5470;
+  height: 30px;
+  width:100vw !important;
+  text-align: center;
+  color: #E0E0E0;
+}
+/* ম্যাপের বক্সের ডিজাইন */
+.map-wrapper-box {
+  width: 100%;
+  height: 55px;
+  background-color: #4285F4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:0px 0px 10px 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  margin-bottom: 10px;
+  
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* যখন ক্লিক করে ম্যাপ বড় হবে */
+.map-wrapper-box.active-map {
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+  cursor: default;
+}
+
+.map-trigger-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* ম্যাপ কন্টেইনার স্টাইল */
+.map-live-content {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.map-iframe-container, .map-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ক্লোজ বাটন স্টাইল */
+.map-close-x {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 100;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
