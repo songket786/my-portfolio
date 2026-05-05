@@ -45,7 +45,7 @@ z-index: 1000;
 .nav-page a{
   text-decoration: none;
   color:white;
-  font-size: 0.85rem;
+  font-size: 12px;
 
   
 }
@@ -148,7 +148,7 @@ background: linear-gradient(to right, #453C22,#9A5A2C);
 #home {
   position: relative;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 12px;
   color: #F8DB06;
   display: inline-block;
    /* লেখা থেকে লাইনের দূরত্ব */
