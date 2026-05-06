@@ -17,43 +17,140 @@
       <p><a id="nav-link" href="contact.html">Contact</a></p>
       <p> <a href="my project.html">My Profile</a></p>
     </div>
-    <div class="nav-search">
-      <input type="text" id="search" placeholder="search anything">
-      <input id="submit" type="submit">
-    </div>
+
+ 
   </nav>
   <main>
     
     
+    <!--<div class="facebook platform">
+      <div style=" background-color:blue; height: 50px; border-radius: 50%;margin-left: 0px;overflow: hidden;z-index: 3;">
+        <img style="height: 50px;width: 50px;" src="linkedin.png"/>
+      </div>
+      <div style="background-color:#2B5D9E  ; width: 200px; text-align: center;margin-left: -25px;border-radius:0px 30px 30px 0px;">
+    <a href="#">View Profile</a>
+      </div>
+    </div>
+    
+        
+     <div class="facebook platform">
+      <div style=" background-color:blue; height: 50px; border-radius: 50%;margin-left: 0px;overflow: hidden;z-index: 3;">
+        <img style="height: 50px;width: 50px;" src="facebook.png"/>
+      </div>
+      <div style="background-color:#2B5D9E  ; width: 200px; text-align: center;margin-left: -25px;border-radius:0px 30px 30px 0px;">
+    <a href="#">View Profile</a>
+      </div>
+    </div>
+    
+        
+     <div class="facebook platform">
+      <div style=" background-color:blue; height: 50px; border-radius: 50%;margin-left: 0px;overflow: hidden;z-index: 3;">
+        <img style="height: 50px;width: 50px;" src="telegram.png"/>
+      </div>
+      <div style="background-color:#2B5D9E  ; width: 200px; text-align: center;margin-left: -25px;border-radius:0px 30px 30px 0px;">
+    <a href="#">View my telegram bot</a>
+      </div>
+    </div>
+    
+         <div class="facebook platform">
+      <div style=" background-color:blue; height: 50px; border-radius: 50%;margin-left: 0px;overflow: hidden;z-index: 3;">
+        <img style="height: 50px;width: 50px;" src="google-forms.png"/>
+      </div>
+      <div style="background-color:#2B5D9E  ; width: 200px; text-align: center;margin-left: -25px;border-radius:0px 30px 30px 0px;">
+    <a href="#">Messege me in anonimus</a>
+      </div>
+    </div>
+    
+        
+    -->
     
     
+   <!-- আইকন লাইব্রেরি (এটি না থাকলে আইকন দেখা যাবে না) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+<!-- আইকন লাইব্রেরি (এটি না থাকলে আইকন দেখা যাবে না) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="contact-wrapper">
+
+    <!-- ফেসবুক -->
+    <div style="background: #1877F2;" class="item">
+        <div class="icon fb" onclick="toggle(this)">
+            <i class="fab fa-facebook-f"></i> <!-- আইকন কোড -->
+        </div>
+        <div class="text">
+            <b>Facebook</b>
+            <a href="https://www.facebook.com/md.naim.757124" target="_blank">Connect Now</a>
+        </div>
+    </div>
+    <!-- টেলিগ্রাম -->
+<div style="background: #0088cc;" class="item">
+    <div class="icon tg" onclick="toggle(this)">
+        <i class="fab fa-telegram-plane"></i>
+    </div>
+    <div class="text">
+        <b>Telegram</b>
+        <a href="https://t.me/Sonket_786bot" target="_blank">Join Channel</a>
+    </div>
+</div>
+
+<!-- লিঙ্কডইন -->
+<div style="background: #2575DB;" class="item">
+    <div class="icon ln" onclick="toggle(this)">
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+    <div class="text">
+        <b>LinkedIn</b>
+        <a href="আপনার-লিঙ্কডইন-লিংক" target="_blank">Connect Now</a>
+    </div>
+</div>
+
+
+    <!-- ইউটিউব -->
+    <div style="background-color: #FF0000;" class="item">
+        <div class="icon yt" onclick="toggle(this)">
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="text">
+            <b>YouTube</b>
+            <a href="https://youtube.com/@mathsworld-n1b?si=1vr17GmBtwNsTqYE">Subscribe</a>
+        </div>
+    </div>
+
+    <!-- জিমেইল -->
+    <div style="background:#D44638;" class="item">
+        <div class="icon gm" onclick="toggle(this)">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="text">
+            <b>Gmail</b>
+            <a href="mailto:example@gmail.com" target="_blank">Send Mail</a>
+        </div>
+    </div>
+
+</div>
+
     
     
     
     
     
   </main>
+  <script>
+
+function toggle(element) {
+    // আইকনের মেইন বক্সটিকে (প্যারেন্ট) ধরে active ক্লাস বসাবে বা কাটবে
+    element.parentElement.classList.toggle('active');
+}
+
+
+
+
+
+
+
+  </script>
 </body>
 
 </html>

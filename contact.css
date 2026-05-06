@@ -26,7 +26,7 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-height: 60px;
+height: 40px;
   width:100%;
 justify-content:flex-start;
 padding-top: 4px;
@@ -55,43 +55,7 @@ z-index: 1000;
   width: 100%;
 }
 
-.nav-search {
-  display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  margin-top: 5px;
-}
-.nav-search p {
-  display: inline-block;
-  
-}
-#search{
-  border: none;
-  padding: 5px  10px 5px 10px;
 
-  width:80%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-#search:focus{
-  outline: none;
-
-}
-#submit{
-  border:none;
-  padding: 5px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width:20%;
-  background-color: #1B5EA0;
-  color: white;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-}
-#submit:hover{
-  background-color:#1A8DFF ;
-}
 /* আইডি ব্যবহারের ক্ষেত্রে # চিহ্ন দিতে হয় */
 #nav-link {
   position: relative;
@@ -101,6 +65,11 @@ z-index: 1000;
   display: inline-block;
    /* লেখা থেকে লাইনের দূরত্ব */
 }
+
+
+
+
+
 
 /* আন্ডারলাইন তৈরির জন্য ::after */
 #nav-link::after {
@@ -129,3 +98,72 @@ z-index: 1000;
     transform: scaleX(1); /* ১০০% হয়ে আটকে থাকবে */
   }
 }
+
+
+
+
+
+
+
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 0.4s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+    /* ক্লিক করলে নীল হাইলাইট হওয়া বন্ধ করার জন্য */
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* যখন ক্লিক করা হবে তখন এই উইথ (width) হবে */
+.item.active {
+    width: 250px;
+}
+
+.icon {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 2px 2px 5px white;
+}
+
+.text {
+    padding-left: 15px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.item.active .text {
+    opacity: 1;
+}
+
+.text b { display: block; color: #333; font-size: 16px; }
+.text a { text-decoration: none; font-size: 13px; color: white; }
+
+/* প্রতিটি আইকনের আলাদা ব্যাকগ্রাউন্ড কালার */
+.fb { background: #1877F2; }
+.yt { background: #FF0000; }
+.tg { background: #0088cc; }
+.gm { background: #D44638; }
+.ln{background-color: #2575DB;}
