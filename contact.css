@@ -10,100 +10,78 @@ body{
   width: 100vw;
   min-height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   border-left:2px solid white;
   border-right: 2px solid white;
 }
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:100%;
-  margin-top: 80px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 85px; /* নিচে জায়গা রাখা হলো যেন কন্টেন্ট ঢাকা না পড়ে */
 }
-nav{
- position:fixed;
+
+nav {
+  position: fixed;
+  bottom: 10px; /* স্ক্রিনের নিচে ফিক্সড থাকবে */
+  width: 90%;
+  height: 65px; 
+  background-color: #171717; /* টেলিগ্রামের ডার্ক কালার */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(30px);
+  border-top: 1px solid #D3B21A;
+  border-bottom: 1px solid #D3B21A;
+  border-radius: 25px;
+  box-shadow: 3px 3px 12px rgba(211, 178, 26, 0.2);
+  z-index: 1000;
+}
+
+.nav-page {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-height: 40px;
-  width:100%;
-justify-content:flex-start;
-padding-top: 4px;
-backdrop-filter:blur(30px);
-
-border-bottom: 1.5px solid #D3B21A;
-border-bottom-left-radius:10px;
-border-bottom-right-radius:10px;
-box-shadow: 0px 1px 10px #D3B21A;
-z-index: 1000;
-}
-.nav-page p{
-  display: inline-block;
-  
-}
-.nav-page a{
   text-decoration: none;
-  color:white;
-  font-size: 12px;
-
-  
-}
-.nav-page{
-  display: flex;
-  justify-content:space-evenly;
-  width: 100%;
+  color: #aaaaaa;
+  font-size: 11px;
+  width: 20%;
+  transition: all 0.2s ease-in-out;
 }
 
-
-/* আইডি ব্যবহারের ক্ষেত্রে # চিহ্ন দিতে হয় */
-#nav-link {
-  position: relative;
-  text-decoration: none;
-  font-size: 12px;
-  color: #F8DB06;
-  display: inline-block;
-   /* লেখা থেকে লাইনের দূরত্ব */
+.icon-wrapper {
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-bottom: 2px;
+  color: white;
+  transition: all 0.2s ease-in-out;
 }
 
-
-
-
-
-
-/* আন্ডারলাইন তৈরির জন্য ::after */
-#nav-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px; /* লাইনের পুরুত্ব */
-  background-color: #FFDF00; /* আপনার পছন্দের রঙ */
-  
-  /* শুরুতে লাইনটি জিরো থাকবে */
-  transform: scaleX(0);
-  transform-origin: left; /* বাম থেকে ডানে যাওয়ার জন্য এটি জরুরি */
-  
-  /* ক্লিক বা পেজ লোড হলে এই অ্যানিমেশনটি চলবে */
-  animation: slideAndStay 0.5s ease-out forwards;
+.nav-label {
+  font-weight: 500;
 }
 
-/* অ্যানিমেশন লজিক: বাম থেকে ডানে গিয়ে স্টে করবে */
-@keyframes slideAndStay {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1); /* ১০০% হয়ে আটকে থাকবে */
-  }
+/* টেলিগ্রাম স্টাইল অ্যাক্টিভ বাটন এবং ব্যাকগ্রাউন্ড পিল ইফেক্ট */
+.nav-item.active {
+  color: #5288c1; /* টেলিগ্রাম ব্লু */
 }
 
-
-
-
-
-
+.nav-item.active .icon-wrapper {
+  background-color: rgba(82, 136, 193, 0.2); /* হালকা নীল রাউন্ড ব্যাকগ্রাউন্ড */
+  color: #5288c1;
+}
 
 
 .contact-wrapper {

@@ -10,105 +10,11 @@ body{
   width: 100vw;
   min-height: 100vh;
   align-items: center;
-  
-  display: flex;
-  flex-direction: column;}
-  
-main{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width:100%;
-  margin-top: 20px;
+  border-left:2px solid white;
+  border-right: 2px solid white;
 }
-.photo1{
-  
-  width:150px;
-  height: 150px;
-  border-radius:50%;
-  border:2px solid black;
-  object-fit: cover;
-  background-color:red;
-  overflow: hidden;
-}
-.photo1 img{
-  object-fit: cover;
-height: 150px;
-width: 150px;
-
-}
-
-.about-me{
-  background-color: #48423E;
-  width:90%;
-  height: 160px;
-  border-radius: 20px 20px 0px 0px;
-
-  padding:5px 10px 5px 10px;
-  margin-bottom: 10px;
-  
-  
-}
-.who-iam{
-  text-align: center;
-  font-size: 2rem;
-  color: white;
-  font-weight: 700;
-}
-#iam-naim{
-  color:#B8B8B8;
-}
-.div2{
-  width :100%;
-  height:auto;
-background-color: #111827;
-margin-top:10px;
-  display :grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  flex-direction: column;
-  align-items: center;
-  gap: 9px;
-  
-  
-
-}
-.div6{
-  width :95%;
-  height:auto;
-background-color: #111827;
-margin-top:10px;
-  display :flex;
-  flex-direction: column;
-  align-items: center;
-  padding :20px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px #545557;
-  margin-top: 25px;
-
-}
-#what-iam-doing{
-  font-size: 2rem;
-  font-weight: 700;
-}
-.html{
-  
-  
-  border-radius:20px;
-  height:100%;
-  width: 100% !important;
-  padding :5px;
-  text-align: center;
-  margin-bottom: 10px;
-  transition: all ease-in-out 0.2s;
--webkit-backdrop-filter: blur(10px);  
-}
-.html:hover{
-  transform: scale(1.0);
-}
-#html-png{
-  width: 35px;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -133,6 +39,7 @@ nav {
   box-shadow: 3px 3px 12px rgba(211, 178, 26, 0.2);
   z-index: 1000;
 }
+
 
 .nav-page {
   display: flex;

@@ -5,68 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="contact.css">
-  <title>My Portpholio</title>
+  <title>My Portgolio</title>
 </head>
 
 <body>
-  <nav>
-    <div class="nav-page">
-      <p><a id="home" href="index.html">Home</a></p>
-      <p><a href="resume.html">Resume</a></p>
-      <p><a  href="portpholio.html">Portpholio</a></p>
-      <p><a id="nav-link" href="contact.html">Contact</a></p>
-      <p> <a href="my project.html">My Profile</a></p>
-    </div>
 
- 
-  </nav>
+  <nav>
+  <div class="nav-page">
+    <a href="index.html" target="home_tab"  class="nav-item">
+      <div class="icon-wrapper"><i class="fas fa-home"></i></div>
+      <span class="nav-label">Home</span>
+    </a>
+    
+    <a href="my profile.html" target="profile_tab"  class="nav-item">
+      <div class="icon-wrapper"><i class="fas fa-user"></i></div>
+      <span class="nav-label">My Profile</span>
+    </a>
+    
+    <a href="portfolio.html" target="portfolio_tab" class="nav-item">
+      <div class="icon-wrapper"><i class="fas fa-briefcase"></i></div>
+      <span class="nav-label">Portpholio</span>
+    </a>
+    
+    <a href="contact.html" target="contact_tab"  class="nav-item">
+      <div class="icon-wrapper"><i class="fas fa-envelope"></i></div>
+      <span class="nav-label">Contact</span>
+    </a>
+    
+
+  </div>
+</nav>
+
   <main>
     
+
     
-    <!--<div class="facebook platform">
-      <div style=" background-color:blue; height: 50px; border-radius: 50%;margin-left: 0px;overflow: hidden;z-index: 3;">
-        <img style="height: 50px;width: 50px;" src="linkedin.png"/>
-      </div>
-      <div style="background-color:#2B5D9E  ; width: 200px; text-align: center;margin-left: -25px;border-radius:0px 30px 30px 0px;">
-    <a href="#">View Profile</a>
-      </div>
-    </div>
-    
-        
-     <div class="facebook platform">
-      <div style=" background-color:blue; height: 50px; border-radius: 50%;margin-left: 0px;overflow: hidden;z-index: 3;">
-        <img style="height: 50px;width: 50px;" src="facebook.png"/>
-      </div>
-      <div style="background-color:#2B5D9E  ; width: 200px; text-align: center;margin-left: -25px;border-radius:0px 30px 30px 0px;">
-    <a href="#">View Profile</a>
-      </div>
-    </div>
-    
-        
-     <div class="facebook platform">
-      <div style=" background-color:blue; height: 50px; border-radius: 50%;margin-left: 0px;overflow: hidden;z-index: 3;">
-        <img style="height: 50px;width: 50px;" src="telegram.png"/>
-      </div>
-      <div style="background-color:#2B5D9E  ; width: 200px; text-align: center;margin-left: -25px;border-radius:0px 30px 30px 0px;">
-    <a href="#">View my telegram bot</a>
-      </div>
-    </div>
-    
-         <div class="facebook platform">
-      <div style=" background-color:blue; height: 50px; border-radius: 50%;margin-left: 0px;overflow: hidden;z-index: 3;">
-        <img style="height: 50px;width: 50px;" src="google-forms.png"/>
-      </div>
-      <div style="background-color:#2B5D9E  ; width: 200px; text-align: center;margin-left: -25px;border-radius:0px 30px 30px 0px;">
-    <a href="#">Messege me in anonimus</a>
-      </div>
-    </div>
-    
-        
-    -->
-    
-    
-   <!-- আইকন লাইব্রেরি (এটি না থাকলে আইকন দেখা যাবে না) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
     
 <!-- আইকন লাইব্রেরি (এটি না থাকলে আইকন দেখা যাবে না) -->
@@ -145,12 +118,35 @@ function toggle(element) {
 }
 
 
+  </script>
+  
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    // ১. বর্তমানে ব্রাউজারে কোন পেজটি ওপেন আছে তার নাম বের করা (যেমন: contact.html)
+    const currentPath = decodeURIComponent(window.location.pathname).split("/").pop();
 
+    // ২. নেভিগেশন বারের সবকটি বাটনকে খুঁজে নেওয়া
+    const navItems = document.querySelectorAll('.nav-item');
 
+    navItems.forEach(item => {
+        // ৩. প্রতিটি বাটনের ভেতরের href লিংকটি নেওয়া (যেমন: resume.html)
+        const itemHref = item.getAttribute('href');
 
-
+        // ৪. কারেন্ট পেজের নামের সাথে যদি বাটনের লিংক মিলে যায়, তবে সেটি হাইলাইট (active) হবে
+        if (currentPath === itemHref || (currentPath === "" && itemHref === "index.html")) {
+            item.classList.add('active');
+        } else {
+            // বাকি বাটনগুলো নরমাল থাকবে
+            item.classList.remove('active');
+        }
+    });
+});
 
   </script>
+  
+  
+  
+  
 </body>
 
 </html>
