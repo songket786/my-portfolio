@@ -143,3 +143,13 @@ nav {
 .tg { background: #0088cc; }
 .gm { background: #D44638; }
 .ln{background-color: #2575DB;}
+
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* এর ফলে অ্যানিমেশনটি সব টেক্সট ও বাটনের পেছনে থাকবে */
+    pointer-events: none; /* যাতে মাউস ক্লিক বা স্ক্রল করতে কোনো বাধা না হয় */
+}
