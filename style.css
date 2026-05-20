@@ -26,10 +26,11 @@ main{
   width:150px;
   height: 150px;
   border-radius:50%;
-  border:2px solid black;
+  
   object-fit: cover;
   background-color:red;
   overflow: hidden;
+  box-shadow: 0px 0px 15px #00F2FE8C;
 }
 .photo1 img{
   object-fit: cover;
@@ -82,8 +83,9 @@ margin-top:10px;
   align-items: center;
   padding :20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px #545557;
+  box-shadow: 0px 0px 10px rgba(157, 78, 221, 0.15);
   margin-top: 25px;
+  border: 1px solid rgba(0, 242, 254, 0.2);
 
 }
 #what-iam-doing{
@@ -119,19 +121,26 @@ main {
 
 nav {
   position: fixed;
-  bottom: 10px; /* স্ক্রিনের নিচে ফিক্সড থাকবে */
+  bottom: 10px;
   width: 90%;
-  height: 65px; 
-  background-color: #171717; /* টেলিগ্রামের ডার্ক কালার */
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(30px);
-  border-top: 1px solid #D3B21A;
-  border-bottom: 1px solid #D3B21A;
   border-radius: 25px;
-  box-shadow: 3px 3px 12px rgba(211, 178, 26, 0.2);
   z-index: 1000;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#0D1117, #0D1117) padding-box,
+    linear-gradient(135deg, #00F2FE, #4F46E5, #EC4899) border-box;
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 .nav-page {
