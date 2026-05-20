@@ -159,3 +159,46 @@ nav {
     z-index: -1; /* এর ফলে অ্যানিমেশনটি সব টেক্সট ও বাটনের পেছনে থাকবে */
     pointer-events: none; /* যাতে মাউস ক্লিক বা স্ক্রল করতে কোনো বাধা না হয় */
 }
+.modal {
+  display: none; /* শুরুতে লুকিয়ে থাকবে */
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5); /* ব্যাকগ্রাউন্ড ঝাপসা */
+  
+}
+
+.modal-content {
+  background-color: #3A96E1;
+  margin: 5% auto; /* পেজের নির্দিষ্ট জায়গা (উপরে ৫%) */
+  padding: 20px;
+  width: 80%; /* মডালের সাইজ */
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 20px;
+padding: 20px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.close {
+  position: absolute;
+  top: 0; right: 10px;
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  color: white;
+}
+/* এটি ফর্মের রঙ একদম ক্লিন সাদা-কালো ডার্ক করবে */
+/* এটি ফর্মের রঙ একদম ক্লিন সাদা-কালো ডার্ক করবে */
+iframe {
+    filter: grayscale(0.8) hue-rotate(180deg)  invert(1) brightness(1);
+    border-radius:15px;
+}
+
+
