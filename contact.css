@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: serif;
+  
 }
 body{
+  font-family: 'Poppins', sans-serif !important;
   background-color:#111827;
   color: white;
   width: 100vw;
@@ -13,6 +14,8 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: radial-gradient(#3341557A 1px, transparent 1px);
+background-size: 10px 10px;
 }
 main {
   display: flex;
@@ -146,9 +149,10 @@ nav {
 /* প্রতিটি আইকনের আলাদা ব্যাকগ্রাউন্ড কালার */
 .fb { background: #1877F2; }
 .yt { background: #FF0000; }
-.tg { background: #0088cc; }
+.tg { background:white ; }
 .gm { background: #D44638; }
 .ln{background-color: #2575DB;}
+.git{background: black;}
 
 #bg-canvas {
     position: fixed;

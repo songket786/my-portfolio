@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="contact.css">
     <!-- যদি JPG ফাইলটিই সরাসরি ব্যবহার করতে চান -->
   <link rel="shortcut icon" sizes="32x32" type="image/png" href="favicon.png?v=2">
-  <title>My Portgolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>My Portfolio</title>
 </head>
 
 <body>
-<canvas id="bg-canvas"></canvas>
+<!--   <canvas id="bg-canvas"></canvas> -->
 
   <nav>
   <div class="nav-page">
@@ -28,13 +31,14 @@
     
     <a href="portfolio.html"  class="nav-item">
       <div class="icon-wrapper"><i class="fas fa-briefcase"></i></div>
-      <span class="nav-label">Portpholio</span>
+      <span class="nav-label">Project </span>
     </a>
     
     <a href="contact.html"  class="nav-item">
       <div class="icon-wrapper"><i class="fas fa-envelope"></i></div>
       <span class="nav-label">Contact</span>
     </a>
+    
     
 
   </div>
@@ -54,17 +58,27 @@
     <!-- ফেসবুক -->
     <div style="background: #1877F2;" class="item">
         <div class="icon fb" onclick="toggle(this)">
-            <i class="fab fa-facebook-f"></i> <!-- আইকন কোড -->
+            <i style="font-size: 50px;" class="fab fa-facebook-f"></i> <!-- আইকন কোড -->
         </div>
         <div class="text">
             <b>Facebook</b>
             <a href="https://www.facebook.com/md.naim.757124" target="_blank">Connect Now</a>
         </div>
     </div>
+    <!-- লিঙ্কডইন -->
+<div style="background-color:white;" class="item">
+    <div class="icon git" onclick="toggle(this)">
+        <i style="font-size: 70px;" class="fab fa-github"></i>
+    </div>
+    <div class="text">
+        <b>LinkedIn</b>
+        <a href="আপনার-লিঙ্কডইন-লিংক" target="_blank">Connect Now</a>
+    </div>
+</div>
     <!-- টেলিগ্রাম -->
 <div style="background: #0088cc;" class="item">
     <div class="icon tg" onclick="toggle(this)">
-        <i class="fab fa-telegram-plane"></i>
+        <i style="font-size: 70px; color: #0088cc;"  class="fab fa-telegram-plane"></i>
     </div>
     <div class="text">
         <b>Telegram</b>
@@ -87,7 +101,7 @@
     <!-- ইউটিউব -->
     <div style="background-color: #FF0000;" class="item">
         <div class="icon yt" onclick="toggle(this)">
-            <i class="fab fa-youtube"></i>
+            <i style="font-size: 40px;" class="fab fa-youtube"></i>
         </div>
         <div class="text">
             <b>YouTube</b>

@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: serif;
 }
 body{
   background-color:#111827;
@@ -10,10 +9,14 @@ body{
   width: 100vw;
   min-height: 100vh;
   align-items: center;
-  
+  font-family: 'Poppins', sans-serif !important;
   display: flex;
-  flex-direction: column;}
-  
+  flex-direction: column;
+  background-image: radial-gradient(#3341557A 1px, transparent 1px);
+  background-size: 10px 10px; 
+  min-height: 100vh;
+  background-attachment: fixed;
+}
 main{
   display: flex;
   flex-direction: column;
@@ -22,11 +25,9 @@ main{
   margin-top: 20px;
 }
 .photo1{
-  
   width:150px;
   height: 150px;
   border-radius:50%;
-  
   object-fit: cover;
   background-color:red;
   overflow: hidden;
@@ -34,9 +35,8 @@ main{
 }
 .photo1 img{
   object-fit: cover;
-height: 150px;
-width: 150px;
-
+  height: 150px;
+  width: 150px;
 }
 
 .about-me{
@@ -44,11 +44,8 @@ width: 150px;
   width:90%;
   height: 160px;
   border-radius: 20px 20px 0px 0px;
-
   padding:5px 10px 5px 10px;
   margin-bottom: 10px;
-  
-  
 }
 .who-iam{
   text-align: center;
@@ -62,22 +59,23 @@ width: 150px;
 .div2{
   width :100%;
   height:auto;
-background-color: #111827;
-margin-top:10px;
+  background-color: #11182766;
+  margin-top:15px;
   display :grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   flex-direction: column;
   align-items: center;
-  gap: 9px;
   
+}
+.div2 p{
   
-
+  font-size: 14px;
 }
 .div6{
   width :95%;
   height:auto;
-background-color: #111827;
-margin-top:10px;
+  background-color: #1118275E;
+  margin-top:10px;
   display :flex;
   flex-direction: column;
   align-items: center;
@@ -86,23 +84,19 @@ margin-top:10px;
   box-shadow: 0px 0px 10px rgba(157, 78, 221, 0.15);
   margin-top: 25px;
   border: 1px solid rgba(0, 242, 254, 0.2);
-
 }
 #what-iam-doing{
   font-size: 2rem;
   font-weight: 700;
 }
 .html{
-  
-  
-  border-radius:20px;
-  height:100%;
+  height:100px !important;
   width: 100% !important;
-  padding :5px;
+  padding-top :15px;
   text-align: center;
   margin-bottom: 10px;
   transition: all ease-in-out 0.2s;
--webkit-backdrop-filter: blur(10px);  
+  border: 0.5px solid white;
 }
 .html:hover{
   transform: scale(1.0);
@@ -110,15 +104,13 @@ margin-top:10px;
 #html-png{
   width: 35px;
 }
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 85px; /* নিচে জায়গা রাখা হলো যেন কন্টেন্ট ঢাকা না পড়ে */
+  margin-bottom: 85px;
 }
-
 nav {
   position: fixed;
   bottom: 10px;
@@ -133,23 +125,13 @@ nav {
   background:
     linear-gradient(#0D1117, #0D1117) padding-box,
     linear-gradient(135deg, #00F2FE, #4F46E5, #EC4899) border-box;
-  
-  
-  
-  
-  
-  
-  
-  
 }
-
 .nav-page {
   display: flex;
   justify-content: space-around;
   width: 100%;
   align-items: center;
 }
-
 .nav-item {
   display: flex;
   flex-direction: column;
@@ -160,7 +142,6 @@ nav {
   width: 20%;
   transition: all 0.2s ease-in-out;
 }
-
 .icon-wrapper {
   padding: 4px 16px;
   border-radius: 20px;
@@ -169,26 +150,87 @@ nav {
   color: white;
   transition: all 0.2s ease-in-out;
 }
-
 .nav-label {
   font-weight: 500;
 }
 
-/* টেলিগ্রাম স্টাইল অ্যাক্টিভ বাটন এবং ব্যাকগ্রাউন্ড পিল ইফেক্ট */
 .nav-item.active {
-  color: #5288c1; /* টেলিগ্রাম ব্লু */
+  color: #5288c1;
 }
 
 .nav-item.active .icon-wrapper {
-  background-color: rgba(82, 136, 193, 0.2); /* হালকা নীল রাউন্ড ব্যাকগ্রাউন্ড */
+  background-color: rgba(82, 136, 193, 0.2);
   color: #5288c1;
 }
-#bg-canvas {
+.div2 > div:last-child:nth-child(odd) {
+  grid-column: span 2;
+  justify-self: center;
+}
+#retro-tv-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* এর ফলে অ্যানিমেশনটি সব টেক্সট ও বাটনের পেছনে থাকবে */
-    pointer-events: none; /* যাতে মাউস ক্লিক বা স্ক্রল করতে কোনো বাধা না হয় */
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+#retro-tv-container {
+    background: #111622;
+    border: 2px solid #00f0ff;
+    border-radius: 16px;
+    padding: 30px;
+    width: 85%;
+    max-width: 420px;
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    transform: scaleX(0) scaleY(0.002); 
+    transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#retro-tv-overlay.rtv-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+#retro-tv-overlay.rtv-active #retro-tv-container {
+    transform: scaleX(1) scaleY(1);
+}
+.rtv-separator {
+    border: 0;
+    border-top: 1px solid #2d3748;
+    margin: 15px 0;
+}
+#rtv-modal-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#rtv-modal-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin: 0 0 20px 0;
+}
+
+.rtv-close-button {
+    background: #4ACBFF ;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.05s ease;
+}
+
+i{
+  font-weight: 300;
 }

@@ -9,16 +9,19 @@
   <link rel="stylesheet" href="style.css">
 
   <link rel="shortcut icon" sizes="32x32" type="image/png" href="favicon.png?v=2">
+     <!-- আইকন লাইব্রেরি (এটি না থাকলে আইকন দেখা যাবে না) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <title>My Portfolio</title>
 </head>
 
 <body>
   
-  <canvas id="bg-canvas"></canvas>
+  <!--   <canvas id="bg-canvas"></canvas> -->
 
-  
-     <!-- আইকন লাইব্রেরি (এটি না থাকলে আইকন দেখা যাবে না) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+
   <nav>
     <div class="nav-page">
       <a href="index.html"  class="nav-item">
@@ -33,7 +36,7 @@
       
       <a href="portfolio.html" class="nav-item">
         <div class="icon-wrapper"><i class="fas fa-briefcase"></i></div>
-        <span class="nav-label">Portpholio</span>
+        <span class="nav-label">Project </span>
       </a>
       
       <a href="contact.html" class="nav-item">
@@ -57,33 +60,109 @@
 
 
 <div class="div2">
-
-  <div class="html">
-    <p align="center"><img src="html.png" id="html-png"></p>
-  <p align="center">
-   Beautiful website by html </p>
-  </div>
-    <div class="html">
-    <p align="center"><img src="css-file.png" id="html-png"></p>
-    <p align="center">
-     Advanced web by css</p>
-  </div>
-   <div class="html">
-   <p align="center"><img src="google form.png" id="html-png"></p>
-   <p align="center">
-     google form manage</p>
- </div>
-    <div class="html">
-     <p align="center"><img src="telegram.png" id="html-png"></p>
-     <p align="center">
-       Telegram bot manegment</p>
-   </div>
-      <div class="html">
-   <p align="center"><img src="logo.png" id="html-png"></p>
-   <p align="center">
-    Professional pdf</p>
- </div>
+<div class="html" onclick="openTvModal('🎨 Front-end Design', 'D')">
+    <i style="font-size:45px;" class="fas fa-desktop"></i>
+    <p>Front-end Design</p>
 </div>
+
+<div style="display:none;" class="html" onclick="openTvModal('⚡ Circuit Analysis', 'প্রেসক্রিপশন এখানে লিখতে হবে')">
+    <i style="font-size:45px;" class="fas fa-bolt"></i>
+    <p>Circuit Analysis</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('🐍 Python Coding', 'hi')">
+    <i style="font-size:45px;" class="fab fa-python"></i>
+    <p>Python Coding</p>
+</div>
+
+<div  class="html" onclick="openTvModal('🐍 Python Coding', 'hi')">
+    <i style="font-size:45px;" class="fab fa-js"></i>
+    <p>JavaScript</p>
+</div>
+
+<div class="html" onclick="openTvModal('💻 C++ Programming', 'hi')">
+    <i style="font-size:45px;" class="fas fa-code"></i>
+    <p>C++ Programming</p>
+</div>
+
+<div class="html" onclick="openTvModal('🤖 Telegram Bot Development', 'Designing secure, automated, and feature-rich bots using robust communication APIs. Focused on building automated notification systems, serverside remote-control tools, and automated research-data alerts.')">
+    <i style="font-size:45px;" class="fas fa-paper-plane"></i>
+    <p style="font-size:14">Telegram Bot Development</p>
+</div>
+
+<div  class="html" onclick="openTvModal('📊 Google Form & PDF Mgmt', 'Developing automated tools to collect research data via Forms and parse/extract technical data from engineering PDF documents. Focused on programmatic data processing and documentation workflows.')">
+    <i style="font-size:45px;" class="fas fa-file-alt"></i>
+    <p>Form & PDF Mgmt</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('🧮 MATLAB Simulation', 'Developing mathematical models, processing signals, and simulating dynamic power or electronic systems. Highly focused on utilizing MATLAB and Simulink for data analysis, control systems design, and electrical engineering research projects.')">
+    <i style="font-size:45px;" class="fas fa-calculator"></i>
+    <p>MATLAB Simulation</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('📐 AutoCAD Design', 'Designing precise electrical schematics, single-line diagrams, and PCB layout configurations. Focused on creating industry-standard blueprints for electronic circuits and power distribution systems for academic and research evaluation.')">
+    <i style="font-size:45px;" class="fas fa-drafting-compass"></i>
+    <p>AutoCAD Design</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('⚡ Power System Analysis', 'Analyzing and simulating electrical grid structures, load flow, and fault distributions. Focused on grid stability, power quality optimization, and modern smart grid integration for research applications.')">
+    <i style="font-size:45px;" class="fas fa-network-wired"></i>
+    <p>Power System</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('☀️ Renewable Energy', 'Researching solar PV characterization, wind energy systems, and hybrid energy storage options. Focused on designing efficient conversion topologies and analyzing clean energy grid integration.')">
+    <i style="font-size:45px;" class="fas fa-solar-panel"></i>
+    <p>Renewable Energy</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('🧠 ML in Engineering', 'Applying machine learning algorithms and neural networks to engineering data. Focused on predictive maintenance, smart grid load forecasting, and automated fault diagnosis in electrical systems.')">
+    <i style="font-size:45px;" class="fas fa-project-diagram"></i>
+    <p>ML in Engineering</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('📟 VLSI & Embedded Systems', 'Designing hardware architectures, microchip layouts, and embedded system configurations. Utilizing Verilog/VHDL for FPGA prototyping and programming microcontrollers for real-time hardware control.')">
+    <i style="font-size:45px;" class="fas fa-microchip"></i>
+    <p>VLSI & Embedded</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('⚙️ Control Systems', 'Modeling and tuning linear/non-linear feedback control loops. Focused on state-space analysis, stability criteria, and designing automation algorithms for robotic systems and process control.')">
+    <i style="font-size:45px;" class="fas fa-sliders-h"></i>
+    <p>Control Systems</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('📡 Signal Processing', 'Processing and filtering continuous and discrete-time signals using Fourier, Laplace, and Z-transforms. Applied in wireless communication simulations and analyzing biological or sensor data.')">
+    <i style="font-size:45px;" class="fas fa-wave-square"></i>
+    <p>Signal Processing</p>
+</div>
+
+<div style="display:none;" class="html" onclick="openTvModal('📝 Research & Publication', 'Conducting comprehensive literature reviews, technical paper writing, and documentation for international journals. Focused on synthesizing complex engineering findings into formal academic publications.')">
+    <i style="font-size:45px;" class="fas fa-pen-nib"></i>
+    <p>Research & Pub.</p>
+</div>
+
+
+
+
+
+<!-- model এর জন্য -->
+<div id="retro-tv-overlay" class="rtv-overlay-hidden" onclick="closeTvModal()">
+    <div id="retro-tv-container" onclick="event.stopPropagation()">
+        
+        <h2 id="rtv-modal-title">Python Coding</h2> 
+        <hr class="rtv-separator">
+        
+        <p id="rtv-modal-desc">Description goes here...</p>
+        
+        <button class="rtv-close-button" onclick="closeTvModal()">CLOSE ✕</button>
+        
+    </div>
+</div>
+<!-- model এর জন্য -->
+
+
+
+
+
     </div>
   </main>
   
@@ -187,7 +266,28 @@
     animate();
 </script>
 
-  
+  <script>// ওল্ড-টিভি স্টাইলে ডাইনামিক পপ-আপ ওপেন করার ফাংশন
+function openTvModal(title, description) {
+    document.getElementById('rtv-modal-title').innerText = title;
+    document.getElementById('rtv-modal-desc').innerText = description;
+    
+    const overlay = document.getElementById('retro-tv-overlay');
+    overlay.classList.remove('rtv-closing'); // আগের ক্লোজিং ক্লাস থাকলে মুছে ফেলা
+    overlay.classList.add('rtv-active');
+}
+
+function closeTvModal() {
+    const overlay = document.getElementById('retro-tv-overlay');
+    overlay.classList.add('rtv-closing'); // ক্লোজিং অ্যানিমেশন চালু করা
+    
+    // অ্যানিমেশন শেষ হওয়া পর্যন্ত (৪০০ মিলি-সেকেন্ড) অপেক্ষা করে overlay হাইড করা
+    setTimeout(() => {
+        overlay.classList.remove('rtv-active');
+        overlay.classList.remove('rtv-closing');
+    }, 400); 
+}
+
+</script>
 </body>
 
 </html>

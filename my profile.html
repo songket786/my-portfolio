@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="my profile.css">
     <link rel="shortcut icon" sizes="32x32" type="image/png" href="favicon.png?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <title>My Portfolio</title>
 </head>
 
 <body>
   
-  <canvas id="bg-canvas"></canvas>
+<!--   <canvas id="bg-canvas"></canvas> -->
 
      <!-- আইকন লাইব্রেরি (এটি না থাকলে আইকন দেখা যাবে না) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
@@ -24,12 +28,12 @@
       
       <a href="my profile.html"   class="nav-item">
         <div class="icon-wrapper"><i class="fas fa-user"></i></div>
-        <span class="nav-label">My Profile</span>
+        <span class="nav-label">My Profile </span>
       </a>
       
       <a href="portfolio.html" class="nav-item">
         <div class="icon-wrapper"><i class="fas fa-briefcase"></i></div>
-        <span class="nav-label">Portpholio</span>
+        <span class="nav-label">Project </span>
       </a>
       
       <a href="contact.html"  class="nav-item">
@@ -43,8 +47,10 @@
 
   <main>
     
-    <div class="photo"><p><img src="naim.jpg"></p></div>
-    <h3>MD Naim Bhuiyan</h3>
+    <div class="photo">
+      <p><img src="naim.jpg"></p>
+    </div>
+    <h2>MD Naim Bhuiyan</h2>
 <pre style="text-align: center;margin-top:-2px;margin-bottom:15px;color: darkgray;font-size:0.85rem;font-weight: 200;"> 29<sup>th</sup> february 2008</pre>
 
 
@@ -55,7 +61,7 @@
 
     <div class="address item-card">
       <div class="icon"> ❯❯ ADDRESS</div>
- <p style="padding-top: 12px;  font-weight: 800;">Permanent Address</p>
+ <p style="padding-top: 12px;  font-weight: 800;font-size: 14px;">Permanent Address</p>
        <table class="table" border="1" style="border-collapse: collapse; margin-bottom: 0px; ">
         <tr>
           <td class="address-location table-desine1">Division</td>
@@ -87,6 +93,11 @@
     <button class="map-close-x">×</button>
     <div class="map-iframe-container">
        <!-- গুগল ম্যাপস থেকে কপি করা পুরো <iframe ...> </iframe> কোডটি নিচে বসান -->
+       
+       
+       
+       
+       
        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d465037.4345113714!2d88.979004!3d24.412421!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc11714a398415%3A0x4b786d401795f55b!2sNatore!5e0!3m2!1sen!2sbd!4v1777933082211!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </div>
@@ -97,7 +108,7 @@
 
 
 
-      <p style="font-weight: 800;">Present Address</p>
+      <p style="font-weight: 800;font-size: 14px;">Present Address</p>
 
       <table class="table" border="1" style="border-collapse: collapse;">
         <tr>
@@ -115,11 +126,7 @@
           <td class="address-name table-desine2"></td>
           
         </tr>
-              <!--  <tr>
-          <td class="address-location table-desine1">Villege</td>
-          <td class="address-name table-desine2"></td>
-          
-        </tr>-->
+            
       </table>
 <!-- ২ নম্বর ম্যাপ সেকশন (আরেকটি উদাহরণ) -->
 <div class="map-wrapper-box" style="margin-bottom: 15px;" onclick="toggleMap(this)">
@@ -145,11 +152,12 @@
  <div class="my-info item-card" style="padding-bottom: 15px;">
  
    <div class="icon">🎓Education</div> 
-   <pre style="background-color:#1E293B;padding: 5px; border-radius: 10px;border: 1px solid #00E5FF;height: auto;text-wrap: wrap;color: lightgray;">&#127963 Department of EEE , Khulna University
+   <pre style="background-color:#1E293B;padding: 5px; border-radius: 10px;border: 1px solid #00E5FF;height: auto;text-wrap: wrap;color: lightgray;font-family: 'Poppins', sans-serif !important;font-size: 13px;">&#127963 Department of EEE , Khulna University
       of Engineering and Tecnology (KUET)    </pre> 
-      <pre style="background-color:#1E293B ;padding: 5px; border-radius: 10px;border: 1px solid #00E5FF; text-wrap: wrap; color: lightgray;">&#127970 St. Joshephs School and College,
+      <pre style="background-color:#1E293B ;padding: 5px; border-radius: 10px;border: 1px solid #00E5FF; text-wrap: wrap; color: lightgray;
+    font-family: 'Poppins', sans-serif !important;font-size: 13px;">&#127970 St. Joshephs School and College,
         Bonpara,Natore</pre>
-      <pre style="background-color:#1E293B ;padding: 5px; border-radius: 10px;border: 1px solid #00E5FF;text-wrap: wrap;color:lightgray ;">&#127979 Ahmedpur M.H High School, Ahmedpur,
+      <pre style="background-color:#1E293B ;padding: 5px; border-radius: 10px;border: 1px solid #00E5FF;text-wrap: wrap;color:lightgray ;font-family: 'Poppins', sans-serif !important;font-size: 13px;">&#127979 Ahmedpur M.H High School, Ahmedpur,
         Baraigram, Natore</pre>
     </div>
  <div class="academic-acheivement item-card" style="padding-bottom: 13px;">
