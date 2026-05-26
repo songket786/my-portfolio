@@ -5,7 +5,7 @@
 
 }
 body{
-  background-color:#111827;
+  background-color:#F0F4F8;
   font-family: 'Poppins', sans-serif !important;
   color: white;
   width: 100vw;
@@ -13,8 +13,9 @@ body{
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-image: radial-gradient(#3341557A 1px, transparent 1px);
+  background-image: radial-gradient(#CBD5E0 1px, transparent 1px);
 background-size: 10px 10px;
+background-attachment: fixed;
 }
 main {
   display: flex;
@@ -96,4 +97,77 @@ nav {
     height: 100%;
     z-index: -1; /* এর ফলে অ্যানিমেশনটি সব টেক্সট ও বাটনের পেছনে থাকবে */
     pointer-events: none; /* যাতে মাউস ক্লিক বা স্ক্রল করতে কোনো বাধা না হয় */
+}
+
+
+.main-div{
+  background:white ;
+  width: 90%;
+  height: auto;
+  display :flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #282727;
+}
+
+.div-info{
+  width: 140px;
+  height: auto;
+  background-color: #FFFFFF;
+  padding :8px 9px;
+  border-radius:20px;
+  border:1px dotted #BBBBBB;
+  margin-left: 18px;
+  margin-top: -30px;
+  color: black;
+  text-align: center;
+  box-shadow: 0px 0px 5px #000000;
+  
+}
+.div-info span{
+  text-transform: uppercase;letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+
+.div1{
+  background-color: white;
+  margin-top: 30px;
+  height: 180px;
+  width: 290px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  margin:auto;
+  margin-top: 10px;
+  border: 8px solid #4F4F4F;
+}
+.div1 img{
+  object-fit: cover;
+  height: 170x;
+width: 290px;
+cursor:pointer;
+transition: all ease-in-out 0.3s;
+
+
+}
+.div1 img:hover{
+  transform: scale(0.9);
+}
+.title{
+  
+  margin :auto;
+  padding:5px 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #1A1A1A;
+  font-weight: 600;
+  margin:-8px;
+  
+  
 }

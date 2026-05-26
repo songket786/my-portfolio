@@ -212,14 +212,12 @@ nav {
     font-size: 22px;
     font-weight: bold;
 }
-
 #rtv-modal-desc {
     font-size: 15px;
     line-height: 1.6;
     color: #cbd5e1;
     margin: 0 0 20px 0;
 }
-
 .rtv-close-button {
     background: #4ACBFF ;
     color: white;
@@ -230,7 +228,112 @@ nav {
     font-size: 14px;
     transition: all 0.05s ease;
 }
-
 i{
   font-weight: 300;
+}
+.div5{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #50C9FF;
+  padding: 20px;
+  text-wrap: wrap;
+  backdrop-filter: blur(1px);
+  border-radius:20px;
+  margin-top: 20px;
+}
+.div5 pre{
+  text-align: center;
+  text-wrap: wrap;
+  padding-top:10px;
+  font-size: 14px;
+  font-family:'Poppins', sans-serif !important;
+}
+.div5 h3{
+  font-size: 30px;
+  margin-top: -15px;
+  border-bottom: 0.2px solid #959FA3;
+  text-align: center;
+  width: 70%;
+}
+.div4{
+  font-size: 70px;
+  z-index:-5;
+  opacity: 0.05;
+  position : sticky;
+  top: 70px;
+  margin-top:-80px;
+}
+/* =========================================
+   Desktop & Tablet Responsiveness 
+   ========================================= */
+
+/* ট্যাবলেট এবং ছোট ল্যাপটপ স্ক্রিনের জন্য (৭৬৮ পিক্সেল বা তার বেশি) */
+@media (min-width: 768px) {
+  
+  /* মেইন কন্টেন্ট যেন বড় স্ক্রিনে অতিরিক্ত চওড়া না হয়ে যায় */
+  .div5, .div6 {
+    width: 80%;
+    max-width: 900px;
+  }
+
+  /* নেভিগেশন বারকে ডেস্কটপের জন্য (Mac-এর Dock-এর মতো) মাঝে সুন্দরভাবে বসানো */
+  nav {
+    width: 60%;
+    max-width: 600px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* "What I do" সেকশনটি মোবাইলে ২ কলাম, ডেস্কটপে ৩ কলাম হবে */
+  .div2 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 15px;
+  }
+
+  /* মোবাইলের বিজোড় কলামের রুল ডেস্কটপে রিসেট করা হলো */
+  .div2 > div:last-child:nth-child(odd) {
+    grid-column: auto;
+    justify-self: stretch;
+  }
+
+  /* স্কিল কার্ডগুলোতে ডেস্কটপের জন্য হোভার ইফেক্ট */
+  .html {
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .html:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 242, 254, 0.4);
+  }
+  
+  /* ওয়েলকাম টেক্সটের সাইজ বড় স্ক্রিনের জন্য অ্যাডজাস্ট করা */
+  .div4 {
+    font-size: 100px;
+    top: 20px;
+  }
+}
+
+/* বড় মনিটর বা ডেস্কটপ স্ক্রিনের জন্য (১০২৪ পিক্সেল বা তার বেশি) */
+@media (min-width: 1024px) {
+  
+  /* বড় স্ক্রিনে স্কিল কার্ডগুলো ৪ কলামে দেখাবে */
+  .div2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* প্রোফাইল পিকচার ডেস্কটপে আরেকটু বড় এবং স্পষ্ট দেখাবে */
+  .photo1 {
+    width: 180px;
+    height: 180px;
+  }
+  .photo1 img {
+    width: 180px;
+    height: 180px;
+  }
 }
