@@ -196,11 +196,11 @@ position: absolute; /* বড় ডিভের সাপেক্ষে সেন
 
 .close {
   position: absolute;
-  top: 0; right: 10px;
-  font-size: 30px;
+  top: 0px; right: 15px;
+  font-size: 50px;
   font-weight: 800;
   cursor: pointer;
-  color: white;
+  color:black;
 }
 
 
