@@ -12,7 +12,7 @@ body{
   font-family: 'Poppins', sans-serif !important;
   display: flex;
   flex-direction: column;
-  background-image: radial-gradient(#3341557A 1px, transparent 1px);
+  background-image: radial-gradient(#334155 1px, transparent 1px);
   background-size: 10px 10px; 
   min-height: 100vh;
   background-attachment: fixed;
@@ -28,14 +28,15 @@ main{
   width:150px;
   height: 150px;
   border-radius:50%;
-  object-fit: cover;
   background-color:red;
+  text-align: center;
   overflow: hidden;
+  
   box-shadow: 0px 0px 15px #00F2FE8C;
 }
 .photo1 img{
   object-fit: cover;
-  height: 150px;
+  height: 200px;
   width: 150px;
 }
 
